@@ -1,10 +1,9 @@
-# PHP Bucket for [Scoop Installer](http://scoop.sh)
+# PHP 8.4 Bucket for [Scoop Installer](http://scoop.sh)
 
 ## Feature
-* All PHP versions from *v5.2* to *v8.4*
+* PHP *v8.4*
 * Persistent custom configuration files
-* Auto update enabled
 
 ## Usage
-1. Add the bucket with `scoop bucket add php`
-2. Install your prefered PHP version with `scoop install php/php7.1.5`
+1. Add the bucket with `scoop bucket add php8.4 https://github.com/sbolch/ScoopPHP.git`
+2. Install PHP with `scoop install php8.4`

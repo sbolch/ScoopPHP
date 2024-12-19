@@ -1,18 +1,18 @@
 {
     "homepage": "https://windows.php.net/downloads/releases/",
-    "version": "8.2.26",
+    "version": "8.4.1",
     "license": {
         "identifier": "PHP-3.01",
         "url": "https://secure.php.net/license/"
     },
     "architecture": {
         "64bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.2.26-Win32-vs16-x64.zip",
-            "hash": "9ee8410de4905a72a7284d12d29232b25705f0621d58c24ab31ccd6f5aaed371"
+            "url": "https://windows.php.net/downloads/releases/php-8.4.1-Win32-vs17-x64.zip",
+            "hash": "020d265aa9aa2759dcd527c16ce4749cb7b8b7f70ec13cac9237f428da2eb6ee"
         },
         "32bit": {
-            "url": "https://windows.php.net/downloads/releases/php-8.2.26-Win32-vs16-x86.zip",
-            "hash": "9405516ba98e84b1a412f4dfce5a0002aaa2dee9b24f37791a588636608d7df0"
+            "url": "https://windows.php.net/downloads/releases/php-8.4.1-Win32-vs17-x86.zip",
+            "hash": "f9555e4c85cd66cb6761404dac270f4bcd87947b10a727fc1d4bb99a03bb1060"
         }
     },
     "bin": [
@@ -26,15 +26,15 @@
     "post_install": "if($bucket) { . \"$(Find-BucketDirectory $bucket\\bin\\postinstall.ps1)\" -dir \"$dir\" }",
     "checkver": {
         "url": "https://windows.php.net/download/",
-        "re": "<h3 id=\"php-8.2\".*?>.*?\\(([\\d.-]+)\\)</h3>"
+        "re": "<h3 id=\"php-8.4\".*?>.*?\\(([\\d.-]+)\\)</h3>"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x64.zip"
+                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs17-x64.zip"
             },
             "32bit": {
-                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs16-x86.zip"
+                "url": "https://windows.php.net/downloads/releases/php-$version-Win32-vs17-x86.zip"
             }
         },
         "hash": {
@@ -42,6 +42,6 @@
         }
     },
     "suggest": {
-        "vcredist": "extras/vcredist2019"
+        "vcredist": "extras/vcredist2022"
     }
 }
