@@ -1,6 +1,6 @@
 param(
     # overwrite upstream param
-    [String]$upstream = "scoopinstaller/php:master"
+    [String]$upstream = "sbolch/ScoopPHP:master"
 )
 
 if(!$env:SCOOP_HOME) { $env:SCOOP_HOME = scoop prefix scoop | Resolve-Path }
